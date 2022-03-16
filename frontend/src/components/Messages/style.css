@@ -1,0 +1,7 @@
+.Messages { 
+  flex-grow: 1; 
+  height: 100vh; 
+  overflow: auto; 
+  background-color: #eef0d6;
+  padding: 24px;
+}

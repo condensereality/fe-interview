@@ -27,7 +27,6 @@ Min body =
     "status": "ready",
     "framerate": 15
 }
-
 """
 import asyncio
 from typing import Literal, List, Optional

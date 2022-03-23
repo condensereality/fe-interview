@@ -1,0 +1,30 @@
+.rig-status-container{
+    margin: 64px 0 0 140px;
+}
+
+
+.rig-status-title{
+    color: #262626; 
+    font-weight: 600px;
+    margin-bottom: 24px;
+}
+
+.rig-status-info{
+    color: #262626; 
+    font-weight: 600px;
+    border: 1PX SOLID #EBEBEB;
+    padding: 24px;
+    font-size: 14px;
+}
+
+.rig-status-info_name{
+    font-weight: 500px;
+    padding-bottom: 24px;
+    font-size: 18px;
+}
+
+.rig-status-info_status{
+    font-weight: 500px;
+    padding-bottom: 24px;
+}
+

@@ -16,5 +16,9 @@ describe("RigStatus Tests", () => {
     const framerateElement = screen.getByTestId("framerate");
     expect(framerateElement).toHaveTextContent(rig.framerate.toString());
   });
+  test('Checks for correct status', () => {
+    render(<RigStatus rig={rig} />);
+    const statusElement = screen.getByTestId("status");
+    expect(statusElement).toHaveTextContent(rig.status);
+  });
 })
-

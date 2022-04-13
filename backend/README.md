@@ -1,10 +1,19 @@
-Using Python 3.10
+# Using Python 3.10
 
 Install with `pip install -r req.txt`
 
 Use like:
     - `python main.py`
     - or `uvicorn main:app --reload`
+
+# Using docker
+
+```
+$ docker build -t be .
+$ docker run -p 8000:8000 --rm be
+```
+
+# Sending requests
 
 Send requests like:
 `curl -X POST http://0.0.0.0:8000 -H "Content-Type: application/json" -d '{<body>}'`

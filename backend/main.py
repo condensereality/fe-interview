@@ -22,10 +22,10 @@ where body matches RigStatus below:
 
 Min body =
 {
-    "id": "1",
-    "name": "Test Rig",
-    "status": "ready",
-    "framerate": 15
+    "id": "2",
+    "name": "Test Rig 2",
+    "status": "error",
+    "framerate": 5
 }
 """
 import asyncio

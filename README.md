@@ -12,6 +12,9 @@ Send data with curl:
 Node version: 16.13 (npm 8.1) - set up using nodenv or nvm
 
 Using 
+- Export environment variables:
+- `export REACT_APP_WS_HOST_URL="wss://cr-fe-interview.herokuapp.com"`
+- `export REACT_APP_HOST_URL="https://cr-fe-interview.herokuapp.com"`
 - `cd frontend`
 - `npm ci`
 - `npm start`

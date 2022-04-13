@@ -1,7 +1,9 @@
 import React from 'react';
+
+import { host, wshost } from './constants';
+import { IRigStatus } from "./models";
 import Messages from './components/Messages';
 import RigStatus from './components/RigStatus';
-import { IRigStatus } from "./models";
 
 interface AppProps { }
 
@@ -26,7 +28,7 @@ class App extends React.Component<AppProps, AppState> {
 
   componentDidMount() {
     // Register websocket connection and add listener
-    this.ws = new WebSocket("ws://localhost:8000/ws");
+    this.ws = new WebSocket(`${wshost}/ws`);
     this.ws.onmessage = (event) => {
       const json = JSON.parse(event.data);
       console.log("Received: ", json);
@@ -34,7 +36,7 @@ class App extends React.Component<AppProps, AppState> {
     };
 
     // Fetch initial data from server 
-    fetch('http://localhost:8000')
+    fetch(host)
       .then(response => response.json())
       .then(rig => {
         this.setState({ rig })

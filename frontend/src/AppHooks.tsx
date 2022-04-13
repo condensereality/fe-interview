@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
+import { host, wshost } from './constants';
 import { IRigStatus } from "./models";
 import RigStatus from "./components/RigStatus";
 import Messages from "./components/Messages";
@@ -16,7 +17,7 @@ const App: React.FC<Props> = () => {
 
   useEffect(() => {
     // Register websocket connection and add listener
-    const ws = new WebSocket("ws://localhost:8000/ws");
+    const ws = new WebSocket(`${wshost}/ws`);
     ws.onmessage = (event) => {
       const json = JSON.parse(event.data);
       console.log("Received: ", json);
@@ -26,7 +27,7 @@ const App: React.FC<Props> = () => {
     };
 
     // Fetch initial data from server
-    fetch('http://localhost:8000')
+    fetch(host)
       .then(response => response.json())
       .then(updateRig);
 

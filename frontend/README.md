@@ -14,10 +14,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-NB: If you aren't running your own backend locally, use Heroku:
-- Export environment variables:
+NB: We use Heroku as the default backend, if you wish to run the backend locally either update the values in `constants.ts` or export the environment variables, e.g.:
+- `export REACT_APP_HOST_URL="http://localhost:8000"`
+- `export REACT_APP_WS_HOST_URL="ws://localhost:8000"`
+
+Alt:
 - `export REACT_APP_WS_HOST_URL="wss://cr-fe-interview.herokuapp.com"`
 - `export REACT_APP_HOST_URL="https://cr-fe-interview.herokuapp.com"`
+
+
 
 ### `npm test`
 

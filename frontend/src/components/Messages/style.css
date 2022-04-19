@@ -1,7 +1,14 @@
-.Messages { 
-  flex-grow: 1; 
-  height: 100vh; 
-  overflow: auto; 
-  background-color: #eef0d6;
+.Messages {
+  flex-grow: 1;
+  height: 100vh;
+  overflow: auto;
+  background-color: #f4f4f4;
   padding: 24px;
+  font-size: 12px;
+  color: #666;
+}
+
+.Messages_count {
+  font-size: 10px;
+  color: #ccc;
 }

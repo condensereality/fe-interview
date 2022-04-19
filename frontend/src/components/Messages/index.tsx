@@ -10,9 +10,9 @@ type Props = {
 const Messages = ({ msgs }: Props) => {
   return (
     <div className='Messages'>
-      Total # messages: {msgs.length}
+      Messages: ({msgs.length}) <hr/>
       {msgs.map((rig: IRigStatus, i) => <div key={i}>
-        {i}: {rig.name} - {rig.status}
+        <span className='Messages_count'>{i}:</span> {rig.name} ({rig.id}) - {rig.status} - {rig.framerate}fps
       </div>)}
     </div>
   )

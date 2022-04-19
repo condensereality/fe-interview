@@ -51,7 +51,6 @@ class App extends React.Component<AppProps, AppState> {
     const { msgs, rig } = this.state;
     return (
       <div className='AppContainer'>
-        <div>Condense Reality Frontend Test</div>
         {rig && <RigStatus rig={rig} />}
         <Messages msgs={msgs} />
       </div>
